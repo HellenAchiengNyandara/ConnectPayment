@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Request Payment";
+}
+
+<h1>Request Payment</h1>
+
+<form asp-action="SubmitPaymentRequest" method="post">
+    <div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="Amount" required />
+    </div>
+    <div>
+        <label for="currency">Currency:</label>
+        <select id="currency" name="Currency">
+            <option value="USD">USD</option>
+            <option value="KES">KES</option>
+            <option value="UGX">UGX</option>
+        </select>
+    </div>
+    <div>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="PhoneNumber" required />
+    </div>
+    <div>
+        <label for="payerMessage">Payer Message:</label>
+        <input type="text" id="payerMessage" name="PayerMessage" />
+    </div>
+    <div>
+        <label for="payeeNote">Payee Note:</label>
+        <input type="text" id="payeeNote" name="PayeeNote" />
+    </div>
+    <button type="submit">Submit Payment Request</button>
+</form>
+
+<a href="/">Back to Home</a>

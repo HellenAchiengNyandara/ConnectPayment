@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "ConnectUs.Controllers.PaymentController",
+    "Method": "CheckTransactionStatus",
+    "RelativePath": "api/Payment/status/{referenceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "referenceId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConnectUs.Controllers.PaymentController",
+    "Method": "SubmitPaymentRequest",
+    "RelativePath": "api/Payment/submit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ConnectUs.Controllers.PaymentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

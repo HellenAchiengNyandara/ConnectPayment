@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Check Transaction Status";
+}
+
+<h1>Check Transaction Status</h1>
+
+<form asp-action="SubmitTransactionStatus" method="get">
+    <div>
+        <label for="referenceId">Transaction Reference ID:</label>
+        <input type="text" id="referenceId" name="ReferenceId" required />
+    </div>
+    <button type="submit">Check Status</button>
+</form>
+
+<a href="/">Back to Home</a>
